@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+section.home-page {
+  color: white;
+}
+section.home-page img {
+  position: absolute;
+  margin-left: -6.2rem;
+  width: 99vw;
+  height: 89.2vh;
+}
+section.home-page .home-page-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding-top: 4rem;
+}
+section.home-page .home-page-inner .left-side h3 {
+  font-family: Mulish;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-left: -15rem;
+  letter-spacing: 0em;
+  cursor: pointer;
+  color: white;
+}
+section.home-page .home-page-inner .left-side p.left-text {
+  margin: 2rem;
+  font-family: Cormorant Infant;
+  font-size: 100px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 100px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+section.home-page .home-page-inner .left-side button.learn-more {
+  height: 64px;
+  width: 280px;
+  border-radius: 20px;
+  inset: 4rem 0;
+  background-color: red;
+  color: white;
+  margin-left: -20rem;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+section.home-page .home-page-inner .right-side {
+  font-family: Mulish;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: center;
+  width: 25rem;
+}

@@ -6,6 +6,7 @@ import {
   editEmployee,
 } from "../services/localstorage";
 import { useForm } from "./../hooks/useForm";
+import "./EmployeeForm.css";
 
 export const EmployeeForm = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export const EmployeeForm = () => {
     name: "",
     email: "",
     address: "",
-    phone: "",
+    message: "",
   });
 
   useEffect(() => {
@@ -37,28 +38,28 @@ export const EmployeeForm = () => {
   return (
     <>
       {/* HEADER */}
-      <div>
+      <div className="form-sec">
         <div>
           <button
-            className="btn-lg p-2 my-1.5 w-25 rounded-pill btn-outline-secondary"
-            onClick={() => navigate("/")}
+            className="btn-lg p-2 button   rounded-pill"
+            onClick={() => navigate("/employee-list")}
           >
-            Back
+            Service List{" "}
           </button>
-          <h1 className="text-center">{id ? "Edit" : "Create"} Employee</h1>
+          <h1 className="text-center">{id ? "Edit" : "Book"} Service</h1>
         </div>
         {showAlert && (
           <div>
             <div className="alert alert-success text-white" role="alert">
               {id
-                ? "Hurray! Employee update successful"
-                : "well done! added a new employee"}{" "}
+                ? "Hurray! updated successful"
+                : "well done! submitted successful"}{" "}
               .
             </div>
           </div>
         )}
         {/* FORM */}
-        <div className="card border-primary p-4 m-1">
+        <div className="card border-primary bg-white p-4 m-1">
           <form onSubmit={handleSubmit}>
             <div className="form-group">
               <label htmlFor="name" className="form-label mt-1">
@@ -70,7 +71,7 @@ export const EmployeeForm = () => {
                 name="name"
                 value={inputValues.name}
                 onChange={handleInputChange}
-                className="form-control"
+                className="form-control "
                 placeholder="Enter your name"
                 required
               />
@@ -105,23 +106,23 @@ export const EmployeeForm = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="phone" className="form-label mt-1">
-                Phone
+              <label htmlFor="message" className="form-label mt-1">
+                Message
               </label>
               <input
                 type="text"
-                name="phone"
-                value={inputValues.phone}
+                name="message"
+                value={inputValues.message}
                 onChange={handleInputChange}
                 className="form-control"
-                id="phone"
-                placeholder="Enter phone"
+                id="message"
+                placeholder="Enter message"
                 required
               />
             </div>
             <div className="d-grid gap-2 mt-3">
               <button type="submit" className="btn btn-outline-primary">
-                Add employee
+                {id ? "Update" : "Submit"}{" "}
               </button>
             </div>
           </form>

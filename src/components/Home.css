@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+
+
+#review{
+    margin-top: 14rem;
+}
+
+#services{
+    margin-top: 14rem;
+}

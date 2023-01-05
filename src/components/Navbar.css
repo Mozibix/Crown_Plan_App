@@ -1,0 +1,66 @@
+.flex_links {
+  display: flex;
+  color: red;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: -1.8rem 17rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+li {
+  cursor: pointer;
+  margin-right: 1rem;
+  padding: 1rem;
+  color: black;
+  border: 2px solid red;
+  border-radius: 20px;
+}
+
+li:hover {
+  color: blue;
+}
+
+.flex_links a {
+  text-decoration: none;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-weight: 900;
+  font-family: Cormorant Infant;
+  font-size: 35px;
+  font-style: italic;
+  letter-spacing: 0em;
+  text-align: left;
+  color: black;
+}
+
+.button-sec {
+  position: relative;
+  inset: 0 -21rem;
+}
+
+button.btn {
+  color: white;
+  background-color: red;
+}
+
+button.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+a.logo-link span.logo img {
+  position: absolute;
+  width: 2.2rem;
+  inset: 0.1rem -1.3rem;
+}
+
+a.logo-link span.red-text {
+  color: red;
+}
